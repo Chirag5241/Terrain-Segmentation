@@ -1,0 +1,2 @@
+2021/11/03 17:27:39 - root - INFO - 81 - train - dataset_name: dtd, model_name: dtd, loss_name: weighted_bce
+2021/11/03 17:27:39 - root - INFO - 82 - train - test with: ['.DS_Store', 'banded', 'blotchy', 'braided', 'bubbly']

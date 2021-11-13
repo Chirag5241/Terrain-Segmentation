@@ -1,0 +1,3 @@
+2021/11/13 16:15:52 - root - INFO - 81 - train - dataset_name: dtd, model_name: dtd, loss_name: weighted_bce
+2021/11/13 16:15:52 - root - INFO - 82 - train - test with: ['.DS_Store', 'banded', 'blotchy', 'braided', 'bubbly']
+2021/11/13 16:15:57 - root - INFO - 117 - train - epoch:0
