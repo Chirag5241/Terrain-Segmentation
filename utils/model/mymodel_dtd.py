@@ -183,7 +183,7 @@ def deep_orientation_gen(ins):
     U_channel = U_channel.float() / (w - 1)
     U_channel = U_channel * 2 - 1
     U_channel = U_channel.repeat(batch_size_tensor, 1, 1, 1)
-    # U_channel = U_channel.cuda()
+    U_channel = U_channel.cuda()
     ins_U_new = torch.cat((ins_U, U_channel), 1)
     # ins_U_new = ins_U * U_channel
 
@@ -198,7 +198,7 @@ def deep_orientation_gen(ins):
     D_channel = D_channel.float() / (w - 1)
     D_channel = D_channel * 2 - 1
     D_channel = D_channel.repeat(batch_size_tensor, 1, 1, 1)
-    # D_channel = D_channel.cuda()
+    D_channel = D_channel.cuda()
     ins_D_new = torch.cat((ins_D, D_channel), 1)
     # ins_D_new = ins_D * D_channel
 
@@ -213,7 +213,7 @@ def deep_orientation_gen(ins):
     L_channel = L_channel.float() / (h - 1)
     L_channel = L_channel * 2 - 1
     L_channel = L_channel.repeat(batch_size_tensor, 1, 1, 1)
-    # L_channel = L_channel.cuda()
+    L_channel = L_channel.cuda()
     ins_L_new = torch.cat((ins_L, L_channel), 1)
     # ins_L_new = ins_L * L_channel
 
@@ -228,7 +228,7 @@ def deep_orientation_gen(ins):
     R_channel = R_channel.float() / (h - 1)
     R_channel = R_channel * 2 - 1
     R_channel = R_channel.repeat(batch_size_tensor, 1, 1, 1)
-    # R_channel = R_channel.cuda()
+    R_channel = R_channel.cuda()
     ins_R_new = torch.cat((ins_R, R_channel), 1)
     # ins_R_new = ins_R * R_channel
 
@@ -244,7 +244,7 @@ def deep_orientation_gen(ins):
     LU_channel = LU_channel.float() / (h - 1)
     LU_channel = LU_channel * 2 - 1
     LU_channel = LU_channel.repeat(batch_size_tensor, 1, 1, 1)
-    # LU_channel = LU_channel.cuda()
+    LU_channel = LU_channel.cuda()
     ins_LU_new = torch.cat((ins_LU, LU_channel), 1)
     # ins_LU_new = ins_LU * LU_channel
 
@@ -261,7 +261,7 @@ def deep_orientation_gen(ins):
     RD_channel = RD_channel.float() / (h - 1)
     RD_channel = RD_channel * 2 - 1
     RD_channel = RD_channel.repeat(batch_size_tensor, 1, 1, 1)
-    # RD_channel = RD_channel.cuda()
+    RD_channel = RD_channel.cuda()
     ins_RD_new = torch.cat((ins_RD, RD_channel), 1)
     # ins_RD_new = ins_RD * RD_channel
 
@@ -277,7 +277,7 @@ def deep_orientation_gen(ins):
     RU_channel = RU_channel.float() / (h - 1)
     RU_channel = RU_channel * 2 - 1
     RU_channel = RU_channel.repeat(batch_size_tensor, 1, 1, 1)
-    # RU_channel = RU_channel.cuda()
+    RU_channel = RU_channel.cuda()
     ins_RU_new = torch.cat((ins_RU, RU_channel), 1)
     # ins_RU_new = ins_RU * RU_channel
 
@@ -294,7 +294,7 @@ def deep_orientation_gen(ins):
     LD_channel = LD_channel.float() / (h - 1)
     LD_channel = LD_channel * 2 - 1
     LD_channel = LD_channel.repeat(batch_size_tensor, 1, 1, 1)
-    # LD_channel = LD_channel.cuda()
+    LD_channel = LD_channel.cuda()
     ins_LD_new = torch.cat((ins_LD, LD_channel), 1)
     # ins_LD_new = ins_LD * LD_channel
 
